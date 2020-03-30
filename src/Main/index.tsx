@@ -6,6 +6,10 @@ import './index.less'
 
 const Main = (props) => {
 
+  function unUsed() {
+    console.log(1)
+  }
+
   function onClick() {
     props.onChange && props.onChange()
   }
