@@ -62,5 +62,14 @@ script:
 
 ### 常用徽标集成 (Shields.io)
 ### 简介
+Shields.io是github徽标的官方网站，支持常用类型的徽标并且还能个性化配置徽标的样式
+### 使用方式
+- 通过修改url的方式来生成自定义徽标
+```
+https://img.shields.io/badge/<LABEL>-<MESSAGE>-<COLOR>
+```
+LABEL: 徽标左半部分的文本
+MESSAGE: 徽标右半部分的文本
+COLOR: 徽标右半部分背景颜色
 
-
+更多使用方式请参考官网。
