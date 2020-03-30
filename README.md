@@ -74,7 +74,7 @@ script:
 ### 常用徽标集成 (Shields.io)
 
 ### 简介
-<a href="https://shields.io/" target="_blank">Shields.io</a>是GitHub徽标的官方网站，支持常用类型的徽标并且还能个性化配置徽标的样式。
+<a href="https://shields.io/" target="_blank">Shields.io</a>是GitHub徽标的官方网站，支持常用类型的徽标并且还能定制个性化徽标。
 
 ### 使用方式
 - 通过配置url的方式来生成自定义徽标
