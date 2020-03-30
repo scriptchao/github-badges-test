@@ -10,3 +10,57 @@
 ![](https://img.shields.io/github/stars/scriptchao/github-badges-test?logo=github&style=social)
 ![](https://img.shields.io/github/watchers/scriptchao/github-badges-test?logo=github&style=social)
 ![](https://img.shields.io/github/commit-activity/m/scriptchao/github-badges-test?logo=github)
+
+## 持续集成状态（Travis CI）
+### 简介
+Travis CI提供的是持续集成服务（Continuous Integration，简称 CI）。支持github项目，使用起来非常方便。
+
+- 使用Github账号登录<a href="https://travis-ci.com/" target="_blank">Travis CI</a> 
+- 或者查看本项目的Travis CI地址 <a href="https://travis-ci.com/scriptchao/github-badges-test" target="_blank">github-badges-test</a> 
+### 使用方式
+在项目的根目录新增.travis.yml文件，内容如下
+```
+# 语言
+language: node_js
+# 版本
+node_js: node
+# 缓存
+cache:
+  directories:
+    - node_modules
+# 构建生命周期
+install:
+  - npm install
+```
+Travis CI教程请参考 <a href="https://docs.travis-ci.com/user/tutorial/" target="_blank">这里</a> 
+
+每次向github提交代码的时，Travis CI就会自动运行.travis.yml里面的script进行构建。
+### 徽标输出
+![](https://raw.githubusercontent.com/scriptchao/github-badges-test/master/images/wx-travis.png)
+
+
+## 单测覆盖率（Codecov）
+### 简介
+Codecov是一个开源的测试结果展示平台，将测试结果可视化。支持github项目，使用起来非常方便。
+### 使用方式
+- 安装依赖
+```
+npm install codecov -D
+```
+- package.json的script脚本中添加如下命令
+```
+ "codecov": "npm run coverage && codecov"
+```
+- .travis.yml中加入如下构建步骤
+```
+# 构建脚本
+script:
+  - npm run codecov
+```
+### 徽标输出
+![](https://raw.githubusercontent.com/scriptchao/github-badges-test/master/images/wx-codecov.png)
+
+### 常用徽标集成 (Shields.io)
+### 简介
+
+
